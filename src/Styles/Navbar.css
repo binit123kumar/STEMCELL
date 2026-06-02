@@ -1,0 +1,40 @@
+/* Navbar link styles: disable hover visual changes and use NavLink active state */
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.navbar-list li {
+  display: inline-block;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: none !important;
+}
+
+/* Disable hover/ focus visual changes */
+.nav-link:hover,
+.nav-link:focus {
+  color: inherit;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Active page highlight only */
+.nav-link.active {
+  background: linear-gradient(135deg, #8c0000 0%, #cd2b2b 100%);
+  color: #fff;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+}

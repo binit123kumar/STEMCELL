@@ -1,0 +1,164 @@
+/* ---------------------------------------------------
+   SCHOOL OF STEM CELL TECHNOLOGY - ABOUT PAGE
+   Professional, Government-University Look
+--------------------------------------------------- */
+
+.about-page {
+  font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  background: linear-gradient(to bottom, #f7fafc, #ffffff);
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+/* Header Section */
+.about-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f3a69;
+  letter-spacing: 0.5px;
+}
+
+.about-subtitle {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.about-tagline {
+  color: #0f766e;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Description */
+.about-description {
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin: 2rem auto 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3e9ef;
+  text-align: justify;
+}
+
+.about-description p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.about-description strong,
+.about-description .em {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+/* Cards Layout Section */
+.about-main {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding: 0 1rem;
+}
+
+/* ✅ Four Cards in One Row */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Card Design */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #0f766e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.2);
+}
+
+/* Icon Box */
+.card-icon {
+  font-size: 1.8rem;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f766e, #2563eb);
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(15, 118, 110, 0.4);
+}
+
+/* Title and Text */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+  }
+}

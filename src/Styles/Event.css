@@ -1,0 +1,71 @@
+/* Event.css */
+
+.Event-Heading {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  /* Add box shadow */
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.head-tag {
+  text-align: center;
+  font-weight: 600;
+}
+
+.img-active {
+  max-width: 100%;
+  width: 500px;
+  height: 450px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.img-active:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* New styles for paragraph alignment */
+.event-paragraph {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 0 15px;
+  font-size: 1.1rem;
+  color: #333;
+  text-indent: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .event-paragraph {
+    padding: 0 10px;
+    font-size: 1rem;
+    text-indent: 20px;
+  }
+  
+  .img-active {
+    width: 100%;
+    height: auto;
+  }
+}
